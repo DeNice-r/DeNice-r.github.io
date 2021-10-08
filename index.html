@@ -1,6 +1,33 @@
-<html>
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <style>
+        #parent{
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            margin-top: -50px;
+            margin-left: -50px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script src="script.js" defer></script>
+    <title>Seeded random</title>
 
-<body><h1>HELLO</h1></body>
-
+</head>
+<body>
+<div id="parent">
+    <label for="r_from">[From</label>
+    <input type="text" id="r_from"><br>
+    <label for="r_from">To]</label>
+    <input type="text" id="r_to"><br>
+    <label for="r_from">N</label>
+    <input type="text" id="r_num"><br>
+    <button onclick="operate_seed_gen()">Generate</button>
+    <h3 id="data"></h3>
+</div>
+</body>
 </html>
